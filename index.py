@@ -69,20 +69,20 @@ def tuisong(err):
 
 
 # 未完善的改良
-def get_sectets(users):
-    while True:
-        try:
-            info = users.split(',')
-            checkinfo[info[0]] = [info[1], info[2]]
-            return checkinfo
-        except:
-            break
+# def get_sectets(users):
+#     while True:
+#         try:
+#             info = users.split(',')
+#             checkinfo[info[0]] = [info[1], info[2]]
+#             return checkinfo
+#         except:
+#             break
 
 
 if __name__ == "__main__":
-    # sectets字段录入
-    users = input()
-    users = ast.literal_eval(users)
+    # secrets字段录入
+    # 廖荆阳的token：5c42e8297b31900f1e752ebc79c8f1fb"
+    users = {"廖荆阳":["5c42e8297b31900f1e752ebc79c8f1fb","201527226"]}
 
     # 调用改良
     # checkinfo = {}
